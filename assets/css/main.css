@@ -1,0 +1,27 @@
+@import "./fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .transition-300 {
+    transition: all 200ms ease-in-out;
+  }
+}
+
+* {
+  font-family: "Sans", sans-serif;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1040px;
+  padding: 0 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 1.3rem;
+  }
+}
